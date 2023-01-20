@@ -68,7 +68,7 @@ class Bart(Homer):
             print("")
     
     def inventar_chiste(self, chiste):
-        chiste=True
+        self.chiste=True
         if chiste==True:
             print("the game")
         else: 
@@ -79,4 +79,91 @@ class Bart(Homer):
         if mentira==True:
             print("La clase del master cheno se entiende a la perfección")
         else:
-            print("")       
+            print("")
+        
+    class Jacqueline(FAM_Simpson):
+        def __init__(self, meme, laringitis, narcicismo, mal_agradecida):
+            super().__init__(meme)
+            self.meme=True
+            self.laringitis=True
+            self.narcicismo=True
+            self.mal_agradecida=True
+        
+        def preferir_zapatos_charol(self, preferir):
+            self.preferir=True
+        
+        def tener_iguana_gigante_mascota(self, mascota_iguana):
+            self.mascota_iguana=True
+        
+        def preferir_no_hablar(self, no_hablar):
+            self.no_hablar=True
+
+    class Marge(Jacqueline):
+        def __init__(self, meme, laringitis, narcicismo, mal_agradecida, cabello_azul, collar_rojo, maternal):
+            super().__init__(meme, laringitis, narcicismo, mal_agradecida)
+            self.meme=True
+            self.laringitis=False
+            self.narcicismo=False
+            self.mal_agradecida=False
+            self.preferir=False
+            self.mascota_iguana=False
+            self.no_hablar=True
+            self.cabello_azul=True
+            self.collar_rojo=True
+            self.maternal=True
+        
+        def hacer_pastel_favorito_lisa(self, pastel_fav):
+            self.pastel_fav=True
+        
+        def liderar_familia(self, liderar):
+            self.liderar=True
+        
+        def preocuparse_demasiado(self, preocuparse):
+            self.preocuparse=True
+        
+    class Lisa(Marge):
+        def __init__(self, meme, laringitis, narcicismo, mal_agradecida, cabello_azul, collar_rojo, maternal, inteligencia, oido_musical, intuicion):
+            super().__init__(meme, laringitis, narcicismo, mal_agradecida, cabello_azul, collar_rojo, maternal)
+            self.meme=True
+            self.laringitis=False
+            self.narcicismo=True
+            self.mal_agradecida=True
+            self.preferir=False
+            self.mascota_iguana=False
+            self.no_hablar=True
+            self.cabello_azul=False
+            self.collar_rojo=False
+            self.maternal=False
+            self.inteligencia=True
+            self.oido_musical=True
+            self.intuicion=True
+        
+        def tocar_saxofon(self, tocar_saxo):
+            tocar_saxo=True
+        
+        def ir_a_la_Escuela(self, ir_escuela):
+            self.ir_escuela=True
+
+        def estudiar_diario(self, estudiar):
+            estudiar=True
+
+    class Amber(Abraham):
+        def __init__(self, viejo, demente, divorciado, gusto_computacion, recien_casada, vive_Las_Vegas):
+            super().__init__(viejo, demente, divorciado)
+            self.meme=True
+            self.viejo=False
+            self.demente=True
+            self.divorciado=True
+            self.gusto_computacion=True
+            self.recien_casada=True
+            self.vive_Las_Vegas=False
+
+        def ser_mesera(self, meserear):
+            self.meserear=True
+        
+        def fumar_en_exceso(self, fumar):
+            self.fumar=True
+
+        def hacer_sandwich_para_homer(self, sandwich):
+            self.sandwich=True
+        
